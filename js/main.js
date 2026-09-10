@@ -207,8 +207,8 @@
   });
 
   /* ── 13. BIG BUY BUTTON ────────────────────── */
-  /* no contract to send anyone to yet — the CTA is pure celebration */
-  $('#bigBuy').addEventListener('click', e => { e.preventDefault(); pump(); });
+  /* opens pump.fun in a new tab; the celebration plays in this one */
+  $('#bigBuy').addEventListener('click', () => pump());
 
   /* ── 14. KONAMI: type "cleo" ───────────────── */
   let seq = '';
