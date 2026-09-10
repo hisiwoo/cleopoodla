@@ -746,3 +746,36 @@ details[open]{
   .seal span{font-size:8.5px}
   .reborn-mark{justify-content:center}
 }
+
+/* ── bonding-curve status pill ── */
+.curve{
+  display:inline-flex;align-items:center;gap:11px;flex-wrap:wrap;margin:0 0 8px;
+  padding:11px 18px 11px 15px;border-radius:999px;border:1px solid transparent;
+  background-image:linear-gradient(#12100a,#12100a),
+                   linear-gradient(120deg,var(--coral),var(--gold) 55%,var(--turq));
+  background-origin:border-box;background-clip:padding-box,border-box;
+  transition:transform .18s,box-shadow .25s;
+}
+.curve:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(212,100,60,.22)}
+.curve-dot{
+  width:8px;height:8px;border-radius:50%;background:var(--coral);
+  box-shadow:0 0 12px var(--coral);animation:blink 1.3s steps(2) infinite;flex:none;
+}
+.curve b{
+  font-family:var(--ui);font-weight:900;font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--gold);
+}
+.curve-sub{font-size:11.5px;color:#8d8168;letter-spacing:-.005em}
+
+/* ── the honest small print under the pyramid ── */
+.footnote{
+  max-width:660px;margin:38px auto 0;font-size:12px;line-height:1.75;color:#7d7159;
+  text-align:center;letter-spacing:-.003em;
+  border-top:1px solid rgba(232,191,90,.16);padding-top:20px;
+}
+.footnote b{color:var(--gold);font-weight:700}
+
+@media(max-width:600px){
+  .curve{justify-content:center}
+  .curve-sub{width:100%;text-align:center}
+}
