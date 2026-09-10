@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CLEOPOODLA — $CLEOP · Queen of the Pups, Ruler of the Memes</title>
+<meta name="description" content="She didn't choose the bob, the bob chose her. The first pup of the Nile, serving viral realness since 1350 BC. $CLEOP on Solana.">
+<meta property="og:title" content="CLEOPOODLA $CLEOP">
+<meta property="og:description" content="Queen of the Pups. Ruler of the Memes. Bark like a pharaoh.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Rubik:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body>
+
+<!-- ══════════ GATE ══════════ -->
+<div id="gate">
+  <div class="gate-inner">
+    <div class="gate-glyphs">𓂀 𓆓 𓋹 𓊽 𓈖 𓃭 𓁐</div>
+    <img src="assets/cleopoodla.jpg" alt="Cleopoodla" class="gate-face">
+    <h1 class="gate-title">
+      <svg viewBox="0 0 1000 150" role="img" aria-label="Cleopoodla">
+        <defs>
+          <linearGradient id="foilGate" x1="-1" x2="0" y1="0" y2="0">
+            <stop offset="0" stop-color="#b8891f"/>
+            <stop offset=".30" stop-color="#e8bf5a"/>
+            <stop offset=".48" stop-color="#fff6d0"/>
+            <stop offset=".66" stop-color="#e8bf5a"/>
+            <stop offset="1" stop-color="#b8891f"/>
+            <animate attributeName="x1" values="-1;1;-1" dur="7s" repeatCount="indefinite"/>
+            <animate attributeName="x2" values="0;2;0" dur="7s" repeatCount="indefinite"/>
+          </linearGradient>
+        </defs>
+        <text x="500" y="112" text-anchor="middle" textLength="940" lengthAdjust="spacingAndGlyphs"
+              font-size="120" fill="url(#foilGate)">CLEOPOODLA</text>
+      </svg>
+    </h1>
+    <p class="gate-sub">Sealed since 1350 BC.<br>Someone has to open it.</p>
+    <button id="enterBtn" class="gate-btn">𓂀 &nbsp;ENTER THE TOMB&nbsp; 𓂀</button>
+    <p class="gate-note">🔊 sound on — that's the whole point</p>
+  </div>
+</div>
+
+<!-- ══════════ FX LAYERS ══════════ -->
+<canvas id="sandCanvas"></canvas>
+<div id="rayLayer"></div>
+<div id="coinLayer"></div>
+<div id="flashLayer"></div>
+
+<!-- ══════════ HUD ══════════ -->
+<div class="hud">
+  <button id="musicBtn" class="hud-btn" title="music">♪<span class="eq"><i></i><i></i><i></i></span></button>
+  <button id="sfxBtn" class="hud-btn" title="sfx">🔊</button>
+</div>
+
+<!-- ══════════ TICKER ══════════ -->
+<div class="ticker" id="ticker">
+  <div class="ticker-track">
+    <span>$CLEOP</span><b>𓋹</b><span>QUEEN OF THE PUPS</span><b>𓋹</b><span>RULER OF THE MEMES</span><b>𓋹</b><span>BARK LIKE A PHARAOH</span><b>𓋹</b><span>SERVING VIRAL REALNESS SINCE 1350 BC</span><b>𓋹</b><span>1 CLEOP = 1 CLEOP</span><b>𓋹</b><span>SHE BURIED THE BEARS</span><b>𓋹</b>
+    <span>$CLEOP</span><b>𓋹</b><span>QUEEN OF THE PUPS</span><b>𓋹</b><span>RULER OF THE MEMES</span><b>𓋹</b><span>BARK LIKE A PHARAOH</span><b>𓋹</b><span>SERVING VIRAL REALNESS SINCE 1350 BC</span><b>𓋹</b><span>1 CLEOP = 1 CLEOP</span><b>𓋹</b><span>SHE BURIED THE BEARS</span><b>𓋹</b>
+  </div>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<header class="hero" id="hero">
+  <div class="hero-glyphwall" aria-hidden="true"></div>
+
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">𓂀 FIRST PUP OF THE NILE · SOLANA</div>
+      <h1 class="mega cartouche">
+        <span class="line" data-t="CLEO">CLEO</span>
+        <span class="line gold" data-t="POODLA">POODLA</span>
+      </h1>
+      <p class="tagline">She didn't choose the bob.<br>The bob chose <em>her</em>.</p>
+
+      <div class="ca" id="caBox" title="click to copy">
+        <span class="ca-label">CA</span>
+        <code id="caText">C1E0PooDLaQueeNofthePuPs11111111111111111</code>
+        <span class="ca-copy" id="caCopy">COPY</span>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#buy" data-sfx="woof">𓊽 BUY $CLEOP</a>
+        <a class="btn btn-ghost" href="#chart" data-sfx="click">VIEW CHART</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><b data-count="1000000000">0</b><span>SUPPLY</span></div>
+        <div class="stat"><b data-count="100">0</b><span>% LP BURNED</span></div>
+        <div class="stat"><b data-count="0">0</b><span>% TAX</span></div>
+        <div class="stat"><b data-count="3375">0</b><span>YRS OF FUD SURVIVED</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="sunburst" aria-hidden="true"></div>
+      <div class="halo"></div>
+      <div class="ring ring-1">𓂀𓆓𓋹𓊽𓈖𓃭𓁐𓅓𓎛𓇳𓊪𓄿𓂀𓆓𓋹𓊽𓈖𓃭𓁐𓅓𓎛𓇳𓊪𓄿</div>
+      <div class="ring ring-2">𓋹𓊽𓈖𓃭𓁐𓅓𓎛𓇳𓊪𓄿𓂀𓆓𓋹𓊽𓈖𓃭𓁐𓅓𓎛𓇳𓊪𓄿𓂀𓆓</div>
+      <div class="queen" id="queen">
+        <img src="assets/cleopoodla.jpg" alt="Cleopoodla, the poodle queen of Egypt" id="queenImg">
+        <span class="laser laser-l"></span>
+        <span class="laser laser-r"></span>
+      </div>
+      <div class="pet-hint" id="petHint">👆 pet her</div>
+      <div class="pet-count" id="petCount"></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">▼</div>
+</header>
+
+<!-- ══════════ MARQUEE ══════════ -->
+<div class="strip">
+  <div class="strip-track">
+    <span>BARK LIKE A PHARAOH · NOT FINANCIAL ADVICE · SHE IS A DOG · SHE IS A QUEEN · SHE IS A DOG QUEEN · SERVING VIRAL REALNESS · </span>
+    <span>BARK LIKE A PHARAOH · NOT FINANCIAL ADVICE · SHE IS A DOG · SHE IS A QUEEN · SHE IS A DOG QUEEN · SERVING VIRAL REALNESS · </span>
+  </div>
+</div>
+
+<!-- ══════════ LORE ══════════ -->
+<section class="sec lore reveal" id="lore">
+  <div class="wrap">
+    <h2 class="h2">THE <span class="gold">LEGEND</span></h2>
+    <div class="lore-grid">
+      <div class="papyrus">
+        <p>In <b>1350 BC</b>, a pup padded into the temple at Karnak wearing a bob nobody had authorised, and the priests simply <em>let it happen</em>.</p>
+        <p>She didn't choose the bob. The bob chose her. Within a season she was collecting lapis, turquoise and coral tribute, and every scribe on the Nile was drawing her face on a wall.</p>
+        <p class="big">𓂀 &nbsp;C L E O P O O D L A&nbsp; 𓂀</p>
+        <p class="mid">Queen of the Pups · Ruler of the Memes</p>
+        <p>She was buried with 1,000,000,000 tokens and one instruction, carved in gold:</p>
+        <p class="carve">"DO NOT SELL."</p>
+        <p class="tiny">— hieroglyph, west wall, tomb of the first pup of the Nile</p>
+      </div>
+      <div class="lore-cards">
+        <div class="lcard" data-sfx="click"><span>𓋹</span><h3>Immortal</h3><p>Three and a half millennia in a tomb and she still didn't paper-hand.</p></div>
+        <div class="lcard" data-sfx="click"><span>𓊽</span><h3>Fluffy</h3><p>Structural integrity of the pyramids: unmatched. Her coat: also unmatched.</p></div>
+        <div class="lcard" data-sfx="click"><span>𓆓</span><h3>Dangerous</h3><p>The falcon of Horus on her crown is decorative. Her stare is not.</p></div>
+        <div class="lcard" data-sfx="click"><span>𓅓</span><h3>Viral</h3><p>Serving realness since 1350 BC, back when going viral meant carving it into granite.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TOKENOMICS ══════════ -->
+<section class="sec tokenomics reveal" id="tokenomics">
+  <div class="wrap">
+    <h2 class="h2">TOKEN<span class="gold">OMICS</span></h2>
+    <p class="sub">Simpler than a pyramid. Fewer moving parts than a mummy.</p>
+    <div class="pyramid">
+      <div class="tier t1" data-sfx="thud"><b>0%</b><span>TAX</span></div>
+      <div class="tier t2" data-sfx="thud"><b>100%</b><span>LP BURNED</span></div>
+      <div class="tier t3" data-sfx="thud"><b>1,000,000,000</b><span>TOTAL SUPPLY</span></div>
+      <div class="tier t4" data-sfx="thud"><b>MINT REVOKED</b><span>THE TOMB IS SEALED</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ HOW TO BUY ══════════ -->
+<section class="sec buy reveal" id="buy">
+  <div class="wrap">
+    <h2 class="h2">HOW TO JOIN THE <span class="gold">DYNASTY</span></h2>
+    <div class="steps">
+      <div class="step" data-sfx="click"><i>I</i><h3>Get a wallet</h3><p>Phantom or Solflare. It's free. It takes less time than mummification.</p></div>
+      <div class="step" data-sfx="click"><i>II</i><h3>Get some SOL</h3><p>Buy on any exchange, send it to your wallet. Do not send it to Rome.</p></div>
+      <div class="step" data-sfx="click"><i>III</i><h3>Swap for $CLEOP</h3><p>Paste the contract address into Jupiter or Raydium and swap.</p></div>
+      <div class="step" data-sfx="click"><i>IV</i><h3>Bark like a pharaoh</h3><p>You are now a subject of the empire. Behave accordingly.</p></div>
+    </div>
+    <div class="cta-center"><a class="btn btn-gold big" href="#" id="bigBuy" data-sfx="woof">𓂀 &nbsp;BARK LIKE A PHARAOH&nbsp; 𓂀</a></div>
+  </div>
+</section>
+
+<!-- ══════════ ROADMAP ══════════ -->
+<section class="sec roadmap reveal" id="chart">
+  <div class="wrap">
+    <h2 class="h2">THE <span class="gold">PROPHECY</span></h2>
+    <div class="phases">
+      <div class="phase done" data-sfx="ding"><h3>Phase I — Excavation</h3><ul><li>Tomb opened</li><li>Token deployed</li><li>LP burned, mint revoked</li><li>First 1,000 subjects</li></ul></div>
+      <div class="phase" data-sfx="ding"><h3>Phase II — The Reign</h3><ul><li>CoinGecko / CMC listings</li><li>Trending on DEX</li><li>Meme legion mobilized</li><li>10,000 holders</li></ul></div>
+      <div class="phase" data-sfx="ding"><h3>Phase III — The Conquest</h3><ul><li>CEX listings</li><li>Billboard in Times Square, but it's just her face</li><li>Merch: the wig</li><li>Rome falls again</li></ul></div>
+      <div class="phase" data-sfx="ding"><h3>Phase IV — Ascension</h3><ul><li>She becomes a constellation</li><li>New pyramid, built by holders</li><li>1 CLEOP = 1 CLEOP (confirmed)</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ GALLERY ══════════ -->
+<section class="sec gallery reveal">
+  <div class="wrap">
+    <h2 class="h2">THE ROYAL <span class="gold">GALLERY</span></h2>
+    <p class="sub">Click a portrait. She likes attention.</p>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="sec faq reveal">
+  <div class="wrap narrow">
+    <h2 class="h2">SCROLLS OF <span class="gold">INQUIRY</span></h2>
+    <details data-sfx="click"><summary>Is this a real investment?</summary><p>It is a real dog in a real bob. Everything past that is your own decision.</p></details>
+    <details data-sfx="click"><summary>Who runs the project?</summary><p>She does. We just hold the leash, and honestly it's unclear who's holding whom.</p></details>
+    <details data-sfx="click"><summary>What's the utility?</summary><p>Serotonin. Also she guards the treasury and has never once let a bear in.</p></details>
+    <details data-sfx="click"><summary>Why a poodle?</summary><p>Because the ancient Egyptians worshipped cats and look how that ended. Also: the bob chose her, not us.</p></details>
+    <details data-sfx="click"><summary>Will it go up?</summary><p>The prophecy says yes. The prophecy has been wrong before. The prophecy is not a financial advisor.</p></details>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <img src="assets/cleopoodla.jpg" alt="" class="foot-face">
+  <div class="foot-links">
+    <a href="https://x.com/ruvv_official/status/2098015474089111754" target="_blank" rel="noopener" data-sfx="click">X / TWITTER</a>
+    <a href="#" data-sfx="click">DEXSCREENER</a>
+  </div>
+  <p class="disclaimer">$CLEOP is a memecoin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. It is entirely useless and for entertainment purposes only. Not affiliated with any ancient Egyptian estate.</p>
+  <p class="copy">𓂀 CLEOPOODLA · <span id="year"></span> · queen of the pups, ruler of the memes 𓂀</p>
+</footer>
+
+<script src="js/audio.js?v=3"></script>
+<script src="js/main.js?v=3"></script>
+</body>
+</html>
