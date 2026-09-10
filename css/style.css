@@ -685,22 +685,7 @@ details[open]{
 .step p a{color:var(--turq);text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(63,198,212,.45)}
 .step p a:hover{color:var(--gold);text-decoration-color:var(--gold)}
 
-/* ═══════════ R E B O R N ═══════════ */
-.reborn-mark{
-  display:flex;align-items:center;gap:14px;margin:14px 0 0;
-}
-.reborn-mark i{flex:1;height:1px;background:var(--line-gold);max-width:120px}
-.reborn-mark span{
-  font-family:var(--ui);font-weight:900;font-size:clamp(11px,1.5vw,14px);
-  letter-spacing:.42em;color:var(--turq);white-space:nowrap;
-  text-shadow:0 0 20px rgba(63,198,212,.55);
-  animation:rebornGlow 3.2s ease-in-out infinite;
-}
-@keyframes rebornGlow{
-  50%{color:#fff3c4;text-shadow:0 0 26px rgba(232,191,90,.8),0 0 60px rgba(232,191,90,.35)}
-}
-
-/* contract pending */
+/* pending contract state, kept for the next launch window */
 .ca-pending{border-style:dashed;cursor:default}
 .ca-pending code{color:var(--gold);letter-spacing:.22em;font-weight:800;font-size:11px}
 .ca-pending .ca-copy{color:var(--turq)}
@@ -710,42 +695,6 @@ details[open]{
   animation:blink 1.15s steps(2) infinite;
 }
 @keyframes blink{50%{opacity:.15}}
-
-/* wax seal stamped on the portrait */
-.seal{
-  position:absolute;right:2%;bottom:14%;width:104px;height:104px;border-radius:50%;
-  display:grid;place-items:center;transform:rotate(-14deg);pointer-events:none;z-index:3;
-  background:radial-gradient(circle at 34% 30%,#3a2a0c,#140e04 72%);
-  border:2px solid var(--gold);
-  box-shadow:0 0 0 4px rgba(11,9,6,.85),0 0 0 5px rgba(232,191,90,.35),
-             0 10px 26px rgba(0,0,0,.6),inset 0 0 22px rgba(232,191,90,.22);
-  animation:sealPulse 3.6s ease-in-out infinite;
-}
-.seal span{
-  font-family:var(--ui);font-weight:900;font-size:11px;letter-spacing:.14em;
-  background:var(--grad-gold);-webkit-background-clip:text;background-clip:text;color:transparent;
-  text-align:center;line-height:1.3;padding-inline:.16em;
-}
-@keyframes sealPulse{50%{transform:rotate(-14deg) scale(1.06)}}
-
-/* live phase in the prophecy */
-.phase.live{
-  background-image:
-    linear-gradient(180deg,#241a0b,#15100a),
-    linear-gradient(150deg,var(--gold),var(--coral) 55%,var(--turq));
-  box-shadow:0 0 34px rgba(232,191,90,.14);
-}
-.phase.live h3::after{
-  content:' ● NOW';font-size:9px;letter-spacing:.18em;color:var(--coral);vertical-align:middle;
-  animation:blink 1.6s steps(2) infinite;
-}
-.foot-links a.pending{opacity:.45}
-
-@media(max-width:600px){
-  .seal{width:78px;height:78px;right:0;bottom:16%}
-  .seal span{font-size:8.5px}
-  .reborn-mark{justify-content:center}
-}
 
 /* ── bonding-curve status pill ── */
 .curve{
