@@ -201,7 +201,8 @@
   });
 
   /* ── 13. BIG BUY BUTTON ────────────────────── */
-  $('#bigBuy').addEventListener('click', e => { e.preventDefault(); pump(); });
+  /* opens pump.fun in a new tab; the pump celebration plays in this one */
+  $('#bigBuy').addEventListener('click', () => pump());
 
   /* ── 14. KONAMI: type "cleo" ───────────────── */
   let seq = '';

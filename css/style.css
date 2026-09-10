@@ -680,3 +680,7 @@ details[open]{
 
 /* ── hero wordmark: JS shrinks a line that would not fit (see main.js) ── */
 .mega .line{white-space:nowrap}
+
+/* inline links inside body copy */
+.step p a{color:var(--turq);text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(63,198,212,.45)}
+.step p a:hover{color:var(--gold);text-decoration-color:var(--gold)}
