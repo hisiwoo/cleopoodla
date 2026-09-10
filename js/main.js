@@ -40,6 +40,12 @@
   /* ── 4. COPY THE CONTRACT ──────────────────── */
   const caBox = $('#caBox'), caCopy = $('#caCopy');
   caBox.addEventListener('click', async () => {
+    if (caBox.classList.contains('ca-pending')) {   // nothing to copy yet
+      CleoAudio.play('zap');
+      caCopy.textContent = 'AT REBIRTH';
+      setTimeout(() => (caCopy.textContent = 'SOON'), 1600);
+      return;
+    }
     const txt = $('#caText').textContent.trim();
     try {
       await navigator.clipboard.writeText(txt);
@@ -201,8 +207,8 @@
   });
 
   /* ── 13. BIG BUY BUTTON ────────────────────── */
-  /* opens pump.fun in a new tab; the pump celebration plays in this one */
-  $('#bigBuy').addEventListener('click', () => pump());
+  /* no contract to send anyone to yet — the CTA is pure celebration */
+  $('#bigBuy').addEventListener('click', e => { e.preventDefault(); pump(); });
 
   /* ── 14. KONAMI: type "cleo" ───────────────── */
   let seq = '';
